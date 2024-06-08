@@ -6,11 +6,6 @@
 //
 
 ///
-@_exported import Foundation
-@_exported import ColorCode_RGBA_256_module
-
-
-///
 public struct StandardHexadecimalColorCode: Hashable {
             
     ///
