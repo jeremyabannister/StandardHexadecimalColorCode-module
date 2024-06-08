@@ -9,10 +9,10 @@
 final class StandardHexadecimalColorCode_tests: XCTestCase {
     
     ///
-    func test_init_rgba () throws {
+    func test_init_rgba() throws {
         
         ///
-        func randomizedTest () throws {
+        func randomizedTest() throws {
             
             ///
             let rgba: ColorCode_RGBA_256 = .generateRandom()
@@ -35,10 +35,10 @@ final class StandardHexadecimalColorCode_tests: XCTestCase {
 extension StandardHexadecimalColorCode_tests {
     
     ///
-    func test_init_Optional_String () throws {
+    func test_failable_init_String() throws {
         
         ///
-        func randomizedTest () throws {
+        func randomizedTest() throws {
             
             ///
             let rgba = ColorCode_RGBA_256.generateRandom()
