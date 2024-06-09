@@ -9,10 +9,10 @@
 final class UInt8_tests: XCTestCase {
     
     ///
-    func test_asHexString () throws {
+    func test_asHexString() throws {
         
         ///
-        func test (_ int: UInt8, _ expected: String) throws {
+        func test(_ int: UInt8, _ expected: String) throws {
             try int
                 .asHexString
                 .assertEqual(to: expected)

@@ -12,7 +12,7 @@ public struct StandardHexadecimalColorCode: Hashable {
     public var rgbaColorCode: ColorCode_RGBA_256
     
     ///
-    public init (rgba: ColorCode_RGBA_256) {
+    public init(rgba: ColorCode_RGBA_256) {
         
         ///
         self.rgbaColorCode = rgba
@@ -23,7 +23,7 @@ public struct StandardHexadecimalColorCode: Hashable {
 extension StandardHexadecimalColorCode: ExpressibleByStringLiteral {
     
     ///
-    public init (stringLiteral: String) {
+    public init(stringLiteral: String) {
         
         ///
         if let hexCode = Self(stringLiteral) {
@@ -38,7 +38,7 @@ extension StandardHexadecimalColorCode: ExpressibleByStringLiteral {
 extension StandardHexadecimalColorCode: Codable {
     
     ///
-    public func encode (to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         
         ///
         try self
@@ -47,7 +47,7 @@ extension StandardHexadecimalColorCode: Codable {
     }
     
     ///
-    public init (from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         ///
         let string = try String(from: decoder)
@@ -78,7 +78,7 @@ extension StandardHexadecimalColorCode {
     }
     
     ///
-    public init? (_ hexString: String) {
+    public init?(_ hexString: String) {
         
         ///
         let trimmedString = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -99,7 +99,7 @@ extension StandardHexadecimalColorCode {
         }
         
         ///
-        func clamped (_ value: UInt64) -> UInt8 {
+        func clamped(_ value: UInt64) -> UInt8 {
             UInt8(min(value, UInt64(UInt8.max)))
         }
         

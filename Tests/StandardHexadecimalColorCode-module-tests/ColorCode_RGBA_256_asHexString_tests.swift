@@ -9,10 +9,10 @@
 final class ColorCode_RGBA_256_tests: XCTestCase {
     
     ///
-    func test_asHexString () throws {
+    func test_asHexString() throws {
         
         ///
-        func test (_ r: UInt8, _ g: UInt8, _ b: UInt8, _ a: UInt8, _ expected: String) throws {
+        func test(_ r: UInt8, _ g: UInt8, _ b: UInt8, _ a: UInt8, _ expected: String) throws {
             try ColorCode_RGBA_256(red: r, green: g, blue: b, alpha: a)
                 .asHexString
                 .assertEqual(to: expected)

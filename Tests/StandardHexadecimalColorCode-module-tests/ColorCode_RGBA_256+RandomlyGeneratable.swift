@@ -9,7 +9,7 @@
 extension ColorCode_RGBA_256: RandomlyGeneratable {
     
     ///
-    public static func generateRandom () -> Self {
+    public static func generateRandom() -> Self {
         .init(
             red: .generateRandom(),
             green: .generateRandom(),
