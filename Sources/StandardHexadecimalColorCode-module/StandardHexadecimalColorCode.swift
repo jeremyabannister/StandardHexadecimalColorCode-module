@@ -69,6 +69,15 @@ extension StandardHexadecimalColorCode: Codable {
 }
 
 ///
+extension StandardHexadecimalColorCode: CustomStringConvertible {
+    
+    ///
+    public var description: String {
+        "#\(self.asHexString)"
+    }
+}
+
+///
 extension StandardHexadecimalColorCode {
     
     ///

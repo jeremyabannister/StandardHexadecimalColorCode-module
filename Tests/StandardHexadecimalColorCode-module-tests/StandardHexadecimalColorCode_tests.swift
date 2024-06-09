@@ -35,6 +35,17 @@ final class StandardHexadecimalColorCode_tests: XCTestCase {
 extension StandardHexadecimalColorCode_tests {
     
     ///
+    func test_description() {
+        try! StandardHexadecimalColorCode("A07F2B")
+            .description
+            .assertEqual(to: "#A07F2B")
+    }
+}
+
+///
+extension StandardHexadecimalColorCode_tests {
+    
+    ///
     func test_asHexString() {
         
         ///
